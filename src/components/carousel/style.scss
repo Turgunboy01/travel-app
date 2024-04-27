@@ -1,0 +1,59 @@
+@import "../../mixsins.scss";
+
+.carousel__page {
+  padding: 3rem 0;
+  .container {
+    overflow: hidden;
+  }
+  .carousel__title {
+    padding: 60px 0;
+    @include dFlex;
+    .arrows {
+      display: flex;
+      gap: 10px;
+      .left__arrow {
+        background-color: rgb(250, 139, 2);
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  }
+  .carousel__body {
+    display: flex;
+    gap: 2rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .carousel__card {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 320px;
+      cursor: pointer;
+      .cart_img {
+        width: 330px;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .days {
+        @include dFlex;
+
+        p {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: rgb(250, 139, 2);
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

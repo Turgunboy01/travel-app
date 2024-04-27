@@ -1,0 +1,31 @@
+.happyCarousel {
+  margin: 6rem 0;
+  .title {
+    padding: 3rem 0;
+  }
+  .userCarousel {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 20px;
+    .carousel_content {
+      h1 {
+        font-size: 23px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .slick-next,
+  .slick-prev {
+    background: orange;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .slick-next {
+    right: 0;
+  }
+}

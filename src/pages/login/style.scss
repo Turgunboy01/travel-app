@@ -1,0 +1,123 @@
+.login {
+  padding-top: 200px;
+  .row {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login__content {
+      width: 100%;
+      background-color: rgb(250, 139, 2);
+      border-radius: 12px;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+      h1 {
+        color: #fff;
+      }
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        label {
+          color: #fff;
+        }
+        input {
+          margin: 10px 0;
+          width: 100%;
+          box-sizing: border-box;
+          border: 1px solid rgba(51, 51, 51, 0.2);
+          border-radius: 8px;
+          outline: 0;
+          padding: 14px 24px;
+
+          /* white */
+          background: rgb(255, 255, 255);
+        }
+        .password {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 8px;
+          width: 100%;
+          height: 46px;
+          margin-top: 10px;
+
+          padding: 14px 24px;
+
+          background-color: #fff;
+          input {
+            border: 0;
+            padding: 0;
+          }
+          button {
+            padding: 4px;
+            background-color: transparent;
+            border: 0;
+          }
+        }
+      }
+      .forgot {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        button {
+          background-color: transparent;
+          border: 0;
+          cursor: pointer;
+          color: #fff;
+          font-size: 15px;
+        }
+      }
+      .signIn {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 12px;
+        border: 1px solid rgb(250, 139, 2);
+        cursor: pointer;
+        font-size: 18px;
+        &:hover {
+          border: 1px solid rgb(189, 79, 0);
+          color: rgb(250, 139, 2);
+        }
+      }
+      .google {
+        width: 100%;
+        padding: 14px 0;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #33333381;
+        font-size: 20px;
+        font-weight: 600;
+        border: 0;
+        cursor: pointer;
+        &:hover {
+          color: rgb(250, 139, 2);
+        }
+        svg {
+          font-size: 20px;
+        }
+      }
+      p {
+        color: #fff;
+      }
+      .signUpBtn {
+        color: #fff;
+        &:hover {
+          color: blueviolet;
+        }
+      }
+    }
+  }
+}
